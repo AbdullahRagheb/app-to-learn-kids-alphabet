@@ -1,0 +1,114 @@
+/* General Body Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Game Container */
+#game-container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px; /* Maximum width to ensure it looks good on large screens */
+    margin: auto;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full height of the viewport */
+}
+/* Basic styling for the logo container */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally in the flex container */
+    align-items: center; /* Centers vertically in the flex container */
+    height: 100vh; /* This takes the full height of the viewport */
+    width: 100vw; /* Ensures the container takes full width of the viewport */
+    margin: 0;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    margin-bottom: 20px;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5); /* Logo starts half its size */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Logo grows to full size */
+    }
+}
+
+/* Applying the animation to the logo */
+#logo {
+    width: 300px; /* Adjust based on your logo's dimensions */
+    animation: fadeIn 3s ease-in-out forwards; /* Animation name, duration, easing, and fill mode */
+}
+
+.start-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+/* For screens that should be visible */
+.active {
+    display: block;
+}
+
+/* Back and Next Navigation Buttons */
+.navigation-btn {
+    font-size: 14px;
+    padding: 10px 20px; /* Slightly smaller than primary buttons */
+    background-color: #008CBA; /* Blue */
+}
+
+/* Additional Specific Styles for Interactive Elements */
+input[type="text"] {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.icon {
+    width: 80px; /* Example size, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.5rem; /* Space between the image and the button */
+}
